@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <script>
+
+            function check() {
+              var inputs = document.getElementsByTagName('input'),
+              inputsLength = inputs.length;
+
+              for (var i = 0; i < inputsLength; i++) {
+                if (inputs[i].type === 'radio' && inputs[i].checked) {
+                  alert('Le poison choisi est du ' + inputs[i].value + '. Entrez votre carte bleu...(et les catisfaction!!)');
+                  prompt('Entrez votre code CB (Soumettre deux fois votre code)');
+
+                  var mdp = prompt('Entrez votre code CB');
+                  if (mdp=='1234'){
+                    alert('Servez vous et Polluez bien!');
+                  }
+
+                  else {
+                    alert('AHAHAHAH! Loupé! Game Over, Try Again!');
+                  }
+                }
+              }
+            }
+
+        </script>
+    </head>
+    <body>
+        <main>
+            <div class="bloc">
+                <h1>Merci d'avoir choisi Pollushion!</h1>
+                <div class="card">
+                    <img src="logope.png" class="logo"/>
+                    <div class="selection">
+                        <h2>Choisissez votre Carburant:</h2>
+                        <label><input type="radio" name="check" value="Gazole" onclick="check()";/>Gazole</label>
+                        <label><input type="radio" name="check"  value="SuperSP" onclick="check()";/>SuperSP</label>
+                        <label><input type="radio" name="check"  value="GPL" onclick="check()";/>GPL</label>
+                    </div>
+                </div>
+                <img src="biohaz.jpeg" class="biohaz"/>
+            </div>
+        </main>
+    </body>
+
+</html>

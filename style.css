@@ -1,0 +1,60 @@
+body{
+  background-image: url("mareen.jpg");
+  background-size: cover;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.bloc{
+  width: 600px;
+  height: 400px;
+  background-color: #000;
+  color: #33FF00;
+  border: 2px solid #33FF00;
+}
+
+.logo{
+  width: 180px;
+  height: 180px;
+  border-radius: 5%
+}
+
+h1{
+  text-align: center;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.selection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2{
+  margin-right: 5%;
+}
+
+input value{
+  background-color: #33FF00;
+  color: purple;
+  border: none;
+  border-radius: 20%;
+}
+
+.biohaz{
+  align-self: flex-end;
+  width: 600px;
+  height: 80px;
+  margin-bottom: -20%;
+}
